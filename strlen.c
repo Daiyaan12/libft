@@ -6,19 +6,16 @@
 /*   By: dbadat <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 11:03:11 by dbadat            #+#    #+#             */
-/*   Updated: 2019/05/21 09:43:28 by dbadat           ###   ########.fr       */
+/*   Updated: 2019/05/22 10:05:13 by dbadat           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-
-size_t ft_strlen(const char *str)
+size_t	ft_strlen(const char *str)
 {
 	size_t len;
 
 	len = 0;
-
-	while(str[len] != '\0')
+	while (str[len] != '\0')
 	{
 		len++;
 	}
