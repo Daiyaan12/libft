@@ -6,15 +6,15 @@
 /*   By: dbadat <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/23 13:21:32 by dbadat            #+#    #+#             */
-/*   Updated: 2019/05/23 13:27:31 by dbadat           ###   ########.fr       */
+/*   Updated: 2019/05/23 13:37:29 by dbadat           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-int	isdigit(int i)
+int	ft_isdigit(int c)
 {
-	if (i <= 9 && i >= 0)
+	if (c <= '9' && c >= '0')
 	{
 		return (1);
 	}
