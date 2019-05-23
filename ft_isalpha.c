@@ -6,23 +6,18 @@
 /*   By: dbadat <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/23 11:11:47 by dbadat            #+#    #+#             */
-/*   Updated: 2019/05/23 11:40:42 by dbadat           ###   ########.fr       */
+/*   Updated: 2019/05/23 13:15:42 by dbadat           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-#include <ctype.h>
 
-int ft_isalpha(int c)
+int	ft_isalpha(int c)
 {
-	if (c >= 101 && c <= 172)
+	if (c >= 65 && c <= 90 || c >= 97 && c <= 122)
+		return (1);
+	else
 	{
-	while (c != '\0')
-			c++;
+		return (0);
 	}
-	else 
-	{
-		return(0);
-	}
-	return(c);
 }
